@@ -56,4 +56,5 @@ CREATE TABLE maintenance_records(
   maintenance_date DATETIME NOT NULL DEFAULT GETDATE(),  -- Date and time of maintenance, defaults to current date/time
   (SQL Server)
   maintenance_type VARCHAR(50) NOT NULL,  -- Type of maintenance (e.g., calibration, repair, PM)
-  maintenance_descriptiokn TEXT,
+  maintenance_description TEXT,  -- Description of the maintenance task
+  performed_by VARCHAR(50),  -- Person who performed the maintenance
